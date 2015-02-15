@@ -21,5 +21,10 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func redcordAudio(sender: UIButton) {
+        //TODO: show text "recoding in progress"
+        //TODO: record the user's voice
+        println("in recordAudio")
+    }
 }
 
