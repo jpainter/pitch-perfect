@@ -24,23 +24,44 @@
                                 <variation key="widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="149" y="250" width="100" height="100"/>
                                 </variation>
+                                <connections>
+                                    <action selector="redcordAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bI9-Gw-pWy"/>
+                                </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9h-ko-OF2">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="BlT-5A-Aze" secondAttribute="centerY" id="2e4-jI-LA4"/>
+                            <constraint firstItem="b9h-ko-OF2" firstAttribute="top" secondItem="BlT-5A-Aze" secondAttribute="bottom" constant="8" id="G9w-e9-kS7"/>
+                            <constraint firstAttribute="centerX" secondItem="b9h-ko-OF2" secondAttribute="centerX" id="i9W-A1-REl"/>
                             <constraint firstAttribute="centerX" secondItem="BlT-5A-Aze" secondAttribute="centerX" id="rBe-cW-dD6"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="b9h-ko-OF2"/>
+                            </mask>
                             <mask key="constraints">
                                 <exclude reference="2e4-jI-LA4"/>
                                 <exclude reference="rBe-cW-dD6"/>
+                                <exclude reference="G9w-e9-kS7"/>
+                                <exclude reference="i9W-A1-REl"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="b9h-ko-OF2"/>
+                            </mask>
                             <mask key="constraints">
                                 <include reference="2e4-jI-LA4"/>
                                 <include reference="rBe-cW-dD6"/>
+                                <include reference="G9w-e9-kS7"/>
+                                <include reference="i9W-A1-REl"/>
                             </mask>
                         </variation>
                     </view>
