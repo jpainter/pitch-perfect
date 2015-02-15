@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BlT-5A-Aze">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BlT-5A-Aze">
                                 <rect key="frame" x="277" y="285" width="46" height="30"/>
                                 <state key="normal" image="microphone">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -47,10 +47,10 @@
                                 <exclude reference="b9h-ko-OF2"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="2e4-jI-LA4"/>
-                                <exclude reference="rBe-cW-dD6"/>
                                 <exclude reference="G9w-e9-kS7"/>
                                 <exclude reference="i9W-A1-REl"/>
+                                <exclude reference="2e4-jI-LA4"/>
+                                <exclude reference="rBe-cW-dD6"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -58,10 +58,10 @@
                                 <include reference="b9h-ko-OF2"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="2e4-jI-LA4"/>
-                                <include reference="rBe-cW-dD6"/>
                                 <include reference="G9w-e9-kS7"/>
                                 <include reference="i9W-A1-REl"/>
+                                <include reference="2e4-jI-LA4"/>
+                                <include reference="rBe-cW-dD6"/>
                             </mask>
                         </variation>
                     </view>
