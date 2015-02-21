@@ -14,6 +14,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var stopRecording: UIButton!
     
+    @IBOutlet weak var recordButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -34,6 +36,7 @@ class ViewController: UIViewController {
         
         recordingInProgress.hidden = false
         stopRecording.hidden = false
+        recordButton.enabled = false
         
         //TODO: record the user's voice
         println("in recordAudio")
@@ -42,6 +45,7 @@ class ViewController: UIViewController {
     @IBAction func stopRecordAudio(sender: UIButton) {
         recordingInProgress.hidden = true
         stopRecording.hidden = true
+        recordButton.enabled =  true
         
         //TODO: record the user's voice
         println("stop recordAudio")
