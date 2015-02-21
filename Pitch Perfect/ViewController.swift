@@ -9,7 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var recordingInProgress: UILabel!
 
+    @IBOutlet weak var stopRecording: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -22,9 +26,22 @@ class ViewController: UIViewController {
 
 
     @IBAction func redcordAudio(sender: UIButton) {
-        //TODO: show text "recoding in progress"
+        
+        recordingInProgress.hidden = false
+        stopRecording.hidden = false
+        
         //TODO: record the user's voice
         println("in recordAudio")
     }
+    
+    @IBAction func stopRecordAudio(sender: UIButton) {
+        recordingInProgress.hidden = true
+        stopRecording.hidden = true
+        
+        //TODO: record the user's voice
+        println("stop recordAudio")
+
+    }
+    
 }
 
