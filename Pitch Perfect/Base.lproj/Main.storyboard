@@ -25,28 +25,62 @@
                                     <action selector="playSlowly:" destination="mkb-b5-1Uc" eventType="touchUpInside" id="BVZ-A1-5ur"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9c-aK-kVo">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="playFast">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playFast:" destination="mkb-b5-1Uc" eventType="touchUpInside" id="2aP-7j-Ovh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thb-nC-nMX">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="Stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopPlay:" destination="mkb-b5-1Uc" eventType="touchUpInside" id="XZf-qX-oYh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="3kx-ZA-bhF" secondAttribute="centerY" constant="129" id="FVa-2q-bHn"/>
+                            <constraint firstAttribute="centerY" secondItem="g9c-aK-kVo" secondAttribute="centerY" constant="129" id="PLe-Iz-1IB"/>
+                            <constraint firstAttribute="centerX" secondItem="thb-nC-nMX" secondAttribute="centerX" id="Sce-K1-Tc4"/>
                             <constraint firstAttribute="centerX" secondItem="3kx-ZA-bhF" secondAttribute="centerX" constant="105" id="Ufb-V2-7tS"/>
+                            <constraint firstAttribute="centerX" secondItem="g9c-aK-kVo" secondAttribute="centerX" constant="-103" id="cHr-K3-Zjb"/>
+                            <constraint firstItem="EKP-hU-bSz" firstAttribute="top" secondItem="thb-nC-nMX" secondAttribute="bottom" constant="39" id="gCx-Df-gbG"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="3kx-ZA-bhF"/>
+                                <exclude reference="g9c-aK-kVo"/>
+                                <exclude reference="thb-nC-nMX"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="FVa-2q-bHn"/>
                                 <exclude reference="Ufb-V2-7tS"/>
+                                <exclude reference="PLe-Iz-1IB"/>
+                                <exclude reference="cHr-K3-Zjb"/>
+                                <exclude reference="Sce-K1-Tc4"/>
+                                <exclude reference="gCx-Df-gbG"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="3kx-ZA-bhF"/>
+                                <include reference="g9c-aK-kVo"/>
+                                <include reference="thb-nC-nMX"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="FVa-2q-bHn"/>
                                 <include reference="Ufb-V2-7tS"/>
+                                <include reference="PLe-Iz-1IB"/>
+                                <include reference="cHr-K3-Zjb"/>
+                                <include reference="Sce-K1-Tc4"/>
+                                <include reference="gCx-Df-gbG"/>
                             </mask>
                         </variation>
                     </view>
@@ -58,7 +92,7 @@
         <!--Record-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="RecordSoundViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -89,7 +123,6 @@
                                 </state>
                                 <connections>
                                     <action selector="stopRecordAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oav-j8-vkG"/>
-                                    <segue destination="mkb-b5-1Uc" kind="show" id="xg7-Vt-Uz7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -137,6 +170,7 @@
                         <outlet property="recordButton" destination="BlT-5A-Aze" id="Adw-p4-axR"/>
                         <outlet property="recordingInProgress" destination="b9h-ko-OF2" id="UkP-Sn-wwh"/>
                         <outlet property="stopRecording" destination="oXd-V2-265" id="ohD-lL-kgV"/>
+                        <segue destination="mkb-b5-1Uc" kind="show" identifier="stopRecording" id="lqZ-fn-Utb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -166,5 +200,6 @@
         <image name="PlaySlowly" width="100" height="100"/>
         <image name="Stop" width="50" height="50"/>
         <image name="microphone" width="100" height="100"/>
+        <image name="playFast" width="100" height="100"/>
     </resources>
 </document>

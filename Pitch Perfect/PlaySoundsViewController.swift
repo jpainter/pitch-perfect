@@ -12,6 +12,7 @@ import AVFoundation
 class PlaySoundsViewController: UIViewController {
     
     var audioPlayer: AVAudioPlayer!
+    var receivedAudio:RecordedAudio!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,10 +22,13 @@ class PlaySoundsViewController: UIViewController {
             
             var filePathUrl = NSURL.fileURLWithPath(filePath)
             audioPlayer = AVAudioPlayer(contentsOfURL: filePathUrl, error: nil)
-            
+            audioPlayer.enableRate = true
+
         }else{
-            println("the file path is empty") }
-    }
+            println("the file path is empty")
+        }
+        
+            }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -34,11 +38,22 @@ class PlaySoundsViewController: UIViewController {
     
 
     @IBAction func playSlowly(sender: UIButton) {
-        //TODO: play recording slowly
+
+        audioPlayer.stop()
+        audioPlayer.rate = 0.5
         audioPlayer.play()
     }
     
+    @IBAction func playFast(sender: UIButton) {
+
+        audioPlayer.stop()
+        audioPlayer.rate = 2.5
+        audioPlayer.play()
+    }
     
+    @IBAction func stopPlay(sender: UIButton) {
+        audioPlayer.stop()
+    }
     /*
     // MARK: - Navigation
 
