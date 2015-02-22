@@ -22,17 +22,11 @@
                                 <state key="normal" image="PlaySlowly">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="45" y="221" width="100" height="100"/>
+                                </variation>
                                 <connections>
                                     <action selector="playSlowly:" destination="mkb-b5-1Uc" eventType="touchUpInside" id="BVZ-A1-5ur"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9c-aK-kVo">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="playFast">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="playFast:" destination="mkb-b5-1Uc" eventType="touchUpInside" id="2aP-7j-Ovh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thb-nC-nMX">
@@ -44,58 +38,64 @@
                                     <action selector="stopPlay:" destination="mkb-b5-1Uc" eventType="touchUpInside" id="XZf-qX-oYh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaW-df-TEA">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="darthvader">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="226" y="334" width="155" height="100"/>
-                                </variation>
-                                <connections>
-                                    <action selector="playDarthVader:" destination="mkb-b5-1Uc" eventType="touchUpInside" id="v2f-RX-TVq"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nw9-KN-7cG">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="chipmunk">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="45" y="334" width="100" height="100"/>
-                                </variation>
                                 <connections>
                                     <action selector="playChipmunk:" destination="mkb-b5-1Uc" eventType="touchUpInside" id="tK1-m8-R90"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaW-df-TEA">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="darthvader">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playDarthVader:" destination="mkb-b5-1Uc" eventType="touchUpInside" id="v2f-RX-TVq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9c-aK-kVo">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="playFast">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                    <rect key="frame" x="253" y="221" width="100" height="100"/>
+                                </variation>
+                                <connections>
+                                    <action selector="playFast:" destination="mkb-b5-1Uc" eventType="touchUpInside" id="2aP-7j-Ovh"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.84322333569999997" blue="0.57139713469999998" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="1" green="0.84322333565829044" blue="0.57139713472594911" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="3kx-ZA-bhF" secondAttribute="centerY" constant="129" id="FVa-2q-bHn"/>
-                            <constraint firstItem="Nw9-KN-7cG" firstAttribute="leading" secondItem="9KI-cd-3Ym" secondAttribute="leadingMargin" constant="56" id="GHE-4g-WAz"/>
-                            <constraint firstAttribute="centerY" secondItem="g9c-aK-kVo" secondAttribute="centerY" constant="129" id="PLe-Iz-1IB"/>
+                            <constraint firstItem="3kx-ZA-bhF" firstAttribute="leading" secondItem="9KI-cd-3Ym" secondAttribute="leadingMargin" constant="25" id="7LM-up-fxq"/>
+                            <constraint firstItem="3kx-ZA-bhF" firstAttribute="top" secondItem="IIK-L9-T1Z" secondAttribute="bottom" constant="25" id="8Ov-zi-oC2"/>
+                            <constraint firstItem="Nw9-KN-7cG" firstAttribute="leading" secondItem="9KI-cd-3Ym" secondAttribute="leadingMargin" constant="25" id="GHE-4g-WAz"/>
                             <constraint firstAttribute="centerX" secondItem="thb-nC-nMX" secondAttribute="centerX" id="Sce-K1-Tc4"/>
-                            <constraint firstAttribute="centerX" secondItem="3kx-ZA-bhF" secondAttribute="centerX" constant="105" id="Ufb-V2-7tS"/>
-                            <constraint firstAttribute="centerX" secondItem="g9c-aK-kVo" secondAttribute="centerX" constant="-103" id="cHr-K3-Zjb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="g9c-aK-kVo" secondAttribute="trailing" constant="25" id="Tt9-Qf-hhR"/>
                             <constraint firstItem="EKP-hU-bSz" firstAttribute="top" secondItem="thb-nC-nMX" secondAttribute="bottom" constant="39" id="gCx-Df-gbG"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="MaW-df-TEA" secondAttribute="trailing" constant="56" id="jmC-Yu-3OF"/>
-                            <constraint firstItem="EKP-hU-bSz" firstAttribute="top" secondItem="MaW-df-TEA" secondAttribute="bottom" constant="166" id="lXW-cx-QvO"/>
-                            <constraint firstItem="EKP-hU-bSz" firstAttribute="top" secondItem="Nw9-KN-7cG" secondAttribute="bottom" constant="166" id="rJb-Bn-CFG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MaW-df-TEA" secondAttribute="trailing" constant="25" id="jmC-Yu-3OF"/>
+                            <constraint firstItem="EKP-hU-bSz" firstAttribute="top" secondItem="MaW-df-TEA" secondAttribute="bottom" constant="100" id="lXW-cx-QvO"/>
+                            <constraint firstItem="EKP-hU-bSz" firstAttribute="top" secondItem="Nw9-KN-7cG" secondAttribute="bottom" constant="100" id="rJb-Bn-CFG"/>
+                            <constraint firstItem="g9c-aK-kVo" firstAttribute="top" secondItem="IIK-L9-T1Z" secondAttribute="bottom" constant="25" id="sEj-US-dxQ"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="3kx-ZA-bhF"/>
-                                <exclude reference="g9c-aK-kVo"/>
                                 <exclude reference="thb-nC-nMX"/>
-                                <exclude reference="MaW-df-TEA"/>
                                 <exclude reference="Nw9-KN-7cG"/>
+                                <exclude reference="MaW-df-TEA"/>
+                                <exclude reference="g9c-aK-kVo"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="FVa-2q-bHn"/>
-                                <exclude reference="Ufb-V2-7tS"/>
-                                <exclude reference="PLe-Iz-1IB"/>
-                                <exclude reference="cHr-K3-Zjb"/>
+                                <exclude reference="7LM-up-fxq"/>
+                                <exclude reference="8Ov-zi-oC2"/>
+                                <exclude reference="Tt9-Qf-hhR"/>
+                                <exclude reference="sEj-US-dxQ"/>
                                 <exclude reference="GHE-4g-WAz"/>
                                 <exclude reference="jmC-Yu-3OF"/>
                                 <exclude reference="Sce-K1-Tc4"/>
@@ -107,16 +107,16 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="3kx-ZA-bhF"/>
-                                <include reference="g9c-aK-kVo"/>
                                 <include reference="thb-nC-nMX"/>
-                                <include reference="MaW-df-TEA"/>
                                 <include reference="Nw9-KN-7cG"/>
+                                <include reference="MaW-df-TEA"/>
+                                <include reference="g9c-aK-kVo"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="FVa-2q-bHn"/>
-                                <include reference="Ufb-V2-7tS"/>
-                                <include reference="PLe-Iz-1IB"/>
-                                <include reference="cHr-K3-Zjb"/>
+                                <include reference="7LM-up-fxq"/>
+                                <include reference="8Ov-zi-oC2"/>
+                                <include reference="Tt9-Qf-hhR"/>
+                                <include reference="sEj-US-dxQ"/>
                                 <include reference="GHE-4g-WAz"/>
                                 <include reference="jmC-Yu-3OF"/>
                                 <include reference="Sce-K1-Tc4"/>
