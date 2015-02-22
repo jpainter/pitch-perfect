@@ -45,6 +45,8 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
         recordButton.enabled = false
         
         //TODO: record the user's voice
+        
+        
         //Inside func recordAudio(sender: UIButton)
         let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
         

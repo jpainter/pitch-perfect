@@ -18,16 +18,19 @@ class PlaySoundsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        if var filePath = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3"){
-            
-            var filePathUrl = NSURL.fileURLWithPath(filePath)
-            audioPlayer = AVAudioPlayer(contentsOfURL: filePathUrl, error: nil)
-            audioPlayer.enableRate = true
-
-        }else{
-            println("the file path is empty")
-        }
+//        if var filePath = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3"){
+//            
+//            var filePathUrl = NSURL.fileURLWithPath(filePath)
+//            audioPlayer = AVAudioPlayer(contentsOfURL: filePathUrl, error: nil)
+//            audioPlayer.enableRate = true
+//
+//        }else{
+//            println("the file path is empty")
+//        }
         
+        audioPlayer = AVAudioPlayer(contentsOfURL: receivedAudio.filePathURL, error: nil)
+        audioPlayer.enableRate = true
+
             }
 
     override func didReceiveMemoryWarning() {
@@ -47,7 +50,7 @@ class PlaySoundsViewController: UIViewController {
     @IBAction func playFast(sender: UIButton) {
 
         audioPlayer.stop()
-        audioPlayer.rate = 2.5
+        audioPlayer.rate = 2.0
         audioPlayer.play()
     }
     
